@@ -1,0 +1,71 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Enabled: true
+      Name: Grid
+      Plane: XY
+      Cell Size: 0.5
+      Alpha: 0.5
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Name: TF
+      Show Axes: true
+      Show Arrows: true
+      Marker Scale: 0.5
+    - Class: rviz_default_plugins/RobotModel
+      Enabled: true
+      Name: RobotModel
+    - Class: rviz_default_plugins/PointCloud2
+      Enabled: true
+      Name: RGBD PointCloud
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+        Value: /camera/points
+      Size (m): 0.03
+      Style: Points
+      Color Transformer: AxisColor
+    - Class: rviz_default_plugins/LaserScan
+      Enabled: true
+      Name: RGBD Slice Scan
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+        Value: /scan
+      Style: Flat Squares
+      Size (m): 0.08
+      Alpha: 1
+      Decay Time: 0
+      Color Transformer: FlatColor
+      Color: 255; 0; 0
+  Enabled: true
+  Global Options:
+    Fixed Frame: base_link
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/SetInitialPose
+    - Class: rviz_default_plugins/SetGoal
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 5
+      Focal Point:
+        X: 1.0
+        Y: 0.0
+        Z: 0.2
+      Pitch: 1.1
+      Yaw: 3.14
+Window Geometry:
+  Height: 900
+  Width: 1200

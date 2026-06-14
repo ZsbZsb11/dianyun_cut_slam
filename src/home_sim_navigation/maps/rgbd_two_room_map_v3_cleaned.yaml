@@ -1,0 +1,10 @@
+image: rgbd_two_room_map_v3_cleaned.pgm
+mode: trinary
+resolution: 0.05000000074505806
+origin:
+- -4.103202151710008
+- -4.146982338173299
+- 0.0
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.25

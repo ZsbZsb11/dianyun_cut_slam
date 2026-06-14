@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>home_sim_navigation</name>
+  <version>0.1.0</version>
+  <description>Mapping and Nav2 launch files for RGB-D sliced 2D navigation.</description>
+  <maintainer email="user@example.com">home_sim</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>home_sim_gazebo</exec_depend>
+  <exec_depend>nav2_bringup</exec_depend>
+  <exec_depend>pointcloud_to_laserscan</exec_depend>
+  <exec_depend>slam_toolbox</exec_depend>
+  <exec_depend>teleop_twist_keyboard</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
